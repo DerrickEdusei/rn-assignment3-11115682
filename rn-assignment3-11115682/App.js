@@ -1,5 +1,9 @@
 import React from 'react';
-
+import { StyleSheet, View, ScrollView } from 'react-native';
+import Header from './components/Header';
+import SearchBar from './components/SearchBar';
+import CategoryList from './components/CategoryList';
+import TaskList from './components/TaskList';
 
 const App = () => {
   const categories = [
