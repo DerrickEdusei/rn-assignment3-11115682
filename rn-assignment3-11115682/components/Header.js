@@ -1,6 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import { View, Text, StyleSheet, Image } from 'react-native';
 
 const Header = () => {
   return (
@@ -9,10 +8,7 @@ const Header = () => {
         <Text style={styles.greeting}>Hello, Devs</Text>
         <Text style={styles.taskCount}>14 tasks today</Text>
       </View>
-      <View style={styles.icons}>
-        <Ionicons name="person-circle-outline" size={30} color="#000" style={styles.icon} />
-        <Ionicons name="filter-outline" size={30} color="#f45e6d" style={styles.icon} />
-      </View>
+      
     </View>
   );
 };
@@ -29,14 +25,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   taskCount: {
-    fontSize: 16,
+    fontSize: 14,
     color: '#666',
   },
-  icons: {
-    flexDirection: 'row',
-  },
-  icon: {
-    marginLeft: 10,
+  profileImage: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
   },
 });
 
